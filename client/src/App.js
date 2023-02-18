@@ -1,25 +1,17 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes ,Route } from 'react-router-dom';
 import styled from "styled-components";
 import "./App.css";
 
 function App() {
   return (
     <Main>
-      <Switch>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/services" />
+        <Route path="/contact" />
+        <Route path="/about" />
+        <Route path="/" element={<div/>}/>
+      </Routes>
     </Main>
   );
 }
