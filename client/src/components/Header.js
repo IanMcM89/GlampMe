@@ -4,8 +4,11 @@ function Header() {
   return (
     <header style={{ backgroundColor: "#077866", height: "10vh" }}>
       <Wrapper>
-        <Logo src="/images/icons/tent.png" alt="" />
-        <Brandname>GlampMe</Brandname>
+        <Logo>GlampMe</Logo>
+        <Nav>
+          <Icon src="/images/icons/profile.png" alt="Profile Icon" />
+          <Icon src="/images/icons/menu.png" alt="Menu icon" />
+        </Nav>
       </Wrapper>
     </header>
   );
@@ -16,17 +19,25 @@ const Wrapper = styled.span`
   height: 100%;
 `;
 
-const Brandname = styled.h1`
+const Logo = styled.h1`
   display: flex;
   align-items: center;
+  font-size: 26px;
   color: white;
   height: 100%;
   margin: auto 0;
+  margin-left: 4%;
 `;
 
-const Logo = styled.img`
-  height: 70%;
+const Icon = styled.img`
+  height: 60%;
   margin: auto 0;
+`;
+
+const Nav = styled.nav`
+  display: flex;
+  height: 100%;
+  margin: auto 2% auto auto;
 `;
 
 export default Header;

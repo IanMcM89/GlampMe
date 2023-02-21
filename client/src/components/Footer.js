@@ -8,11 +8,8 @@ function Footer() {
 
 const Wrapper = styled.footer`
   display: flex;
-  align-items: center;
   background-color: #404040;
-  color: white;
-  height: 10vh;
-  bottom: 10px;
+  padding: 4vh;
 `;
 
 export default Footer;
