@@ -1,7 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/pages/Home";
+import Packages from "./components/pages/Packages";
+import Explore from "./components/pages/Explore";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
 import styled from "styled-components";
 import "./App.css";
 
@@ -16,8 +21,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
         </Routes> */}
-        <Home src="/images/bonfire.jpg" alt="" />
-        <Services />
+        <Home />
+        <Packages />
+        <Explore />
         <About />
         <Contact />
         <Footer />
@@ -30,34 +36,7 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   height: 90vh;
-  overflow-y: hidden;
-`;
-
-const Home = styled.img`
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-`;
-
-const Services = styled.section`
-  display: flex;
-  flex-direction: column;
-  background-color: #d9f2e5;
-  height: 500px;
-`;
-
-const About = styled.section`
-  display: flex;
-  flex-direction: column;
-  background-color: #c6ebd8;
-  height: 500px;
-`;
-
-const Contact = styled.section`
-  display: flex;
-  flex-direction: column;
-  background-color: #b4e4cb;
-  height: 500px;
+  overflow-y: scroll;
 `;
 
 export default App;
