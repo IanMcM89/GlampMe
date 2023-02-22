@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import styled from "styled-components";
 
 function Contact() {
@@ -11,6 +12,7 @@ function Contact() {
           minim veniam, quis nostrud exercitation ullamco laboris.
         </p>
       </Article>
+      <Footer />
     </Wrapper>
   );
 }
@@ -28,13 +30,12 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   height: fit-content;
-  padding: 4%;
 `;
 
 const Article = styled.article`
   background-color: white;
   color: dimgray;
-  margin: 4%;
+  margin: 5%;
   padding: 5%;
 `;
 

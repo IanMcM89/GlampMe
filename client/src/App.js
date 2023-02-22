@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
 import Packages from "./components/pages/Packages";
 import Explore from "./components/pages/Explore";
@@ -23,10 +22,8 @@ function App() {
         </Routes> */}
         <Home />
         <Packages />
-        <Explore />
         <About />
         <Contact />
-        <Footer />
       </Main>
     </>
   );
