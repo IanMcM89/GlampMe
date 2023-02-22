@@ -4,6 +4,11 @@ function Header() {
   return (
     <header style={{ backgroundColor: "#077866", height: "10vh" }}>
       <Wrapper>
+        <Icon
+          src="/images/icons/tent.png"
+          alt="Menu icon"
+          style={{ marginLeft: "2%" }}
+        />
         <Logo>GlampMe</Logo>
         <Nav>
           <Icon src="/images/icons/profile.png" alt="Profile Icon" />
@@ -26,7 +31,6 @@ const Logo = styled.h1`
   color: white;
   height: 100%;
   margin: auto 0;
-  margin-left: 4%;
 `;
 
 const Icon = styled.img`
